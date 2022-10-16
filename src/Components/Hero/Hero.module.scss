@@ -3,8 +3,6 @@ $gray: #262626;
 
 .container{
   display: flex;
-  justify-content: center;
-  margin-top: 100px;
   align-items: center;
   max-width: 1110px;
   .containerLeft {
@@ -80,11 +78,21 @@ $gray: #262626;
   }
 }
 
+@media screen and (min-width: 1244px) {
+  .container{
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+}
 @media screen and (max-width: 1244px) {
   .containerRight{
     display: none;
   }
   .containerLeft{
     margin: 0 auto;
+  }
+  .container{
+    margin-top: 100px;
+    justify-content: center;
   }
 }
