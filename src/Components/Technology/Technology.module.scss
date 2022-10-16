@@ -1,0 +1,45 @@
+.wrapper{
+  >h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    background: linear-gradient(91.37deg, #26B7CB 20.2%, #106B93 106.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px
+  }
+  .container_cards{
+    max-width: 1110px;
+    min-height: 850px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    .card{
+      width: 255px;
+      height: 255px;
+      background-color: #262626;
+      box-shadow: 0px 4px 19px rgba(3, 3, 3, 0.25);
+      border-radius: 17px;
+      text-align: center;
+      .image{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+      }
+      >p{
+        margin-top: 48px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+  }
+}
