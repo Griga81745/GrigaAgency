@@ -1,16 +1,19 @@
 .wrapper{
   margin-top: 100px;
   margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
   .container{
     max-width: 1110px;
-    width: 91%;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
     min-height: 253px;
     padding: 30px;
     padding-top: 35px;
     background: #262626;
     box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.25);
     border-radius: 17px;
-    margin: 0 auto;
     .container_text{
       display: flex;
       .text{
