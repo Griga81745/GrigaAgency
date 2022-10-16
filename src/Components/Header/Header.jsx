@@ -13,19 +13,21 @@ function Header(props) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <header className={style.headerContainer}>
-                <a href="/">
-                    <Image src={Logo}/>
-                </a>
-                <div className={style.headerLinks_adaptation}>
-                    <div id="header-links" className={style.headerLinks}>
-                        <A href={"/"} text={"Главная"}/>
-                        <A href={"/"} text={"Портфолио"}/>
-                        <A href={"/"} text={"Обо мне"}/>
-                        <A href={"/"} text={"Технологии"}/>
-                        <A href={"/"} text={"Контакты"}/>
+                <div>
+                    <a href="/">
+                        <Image src={Logo}/>
+                    </a>
+                    <div className={style.headerLinks_adaptation}>
+                        <div id="header-links" className={style.headerLinks}>
+                            <A href={"/"} text={"Главная"}/>
+                            <A href={"/"} text={"Портфолио"}/>
+                            <A href={"/"} text={"Обо мне"}/>
+                            <A href={"/"} text={"Технологии"}/>
+                            <A href={"/"} text={"Контакты"}/>
+                        </div>
                     </div>
+                    <button>Заказать</button>
                 </div>
-                <button>Заказать</button>
             </header>
         </div>
     );
