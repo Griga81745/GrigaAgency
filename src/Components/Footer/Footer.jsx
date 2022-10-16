@@ -5,6 +5,7 @@ import logo from "../../../public/assets/images/Footer/Logo.svg"
 import github from "../../../public/assets/images/Footer/gitHub.svg"
 import mail from "../../../public/assets/images/Footer/mail.svg"
 import telegram from "../../../public/assets/images/Footer/telegram.svg"
+import Links from "../Hero/Links/Links";
 
 
 function Footer() {
@@ -18,9 +19,7 @@ function Footer() {
                     <p className={style.rights}>© 2020 Griga Agency. All rights reserved. </p>
                 </div>
                 <div className={style.links}>
-                    <Image src={github}/>
-                    <Image src={mail}/>
-                    <Image src={telegram}/>
+                    <Links/>
                 </div>
             </div>
         </div>

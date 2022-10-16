@@ -26,6 +26,7 @@ $gray: #262626;
       font-size: 32px;
       line-height: 38px;
       letter-spacing: 0.04em;
+      margin-bottom: 40px;
     }
 
     .contactICOS{
@@ -34,6 +35,20 @@ $gray: #262626;
       max-width: 255px;
       width: 100%;
       justify-content: space-between;
+      .circle{
+        width: 65px;
+        height: 65px;
+        border-radius: 100px;
+        background-color: #262626;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+          .circle_image{
+            filter: invert(51%) sepia(83%) saturate(460%) hue-rotate(141deg) brightness(94%) contrast(83%);
+          }
+        }
+      }
     }
 
     .containerLeft_Button{
