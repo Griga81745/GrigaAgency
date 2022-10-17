@@ -17,7 +17,7 @@ function Description() {
                 <div className={style.portfolio_description_descriptionTag_container}>
                     <div id={"description_1"} onClick={set_Active} className={style.portfolio_description_descriptionTag}>
                         <p style={{userSelect: "none"}}>Подробнее</p>
-                        <Image src={arrow} style={{transform: active? 'rotate(180deg)':"", transitionDuration: "0.5s"}}/>
+                        <Image src={arrow} alt={"arrow"} style={{transform: active? 'rotate(180deg)':"", transitionDuration: "0.5s"}}/>
                     </div>
                 </div>
                 <div className={style.portfolio_descriptionTag}>

@@ -13,7 +13,7 @@ function WhoWeDo() {
             </div>
             <div className={style.all_block_container}>
                 <div className={style.container}>
-                    <Image src={screen}/>
+                    <Image src={screen} alt={"screen"}/>
                     <div className={style.underline}></div>
                     <div className={style.text}>
                         <h1>Разработка</h1>
@@ -22,7 +22,7 @@ function WhoWeDo() {
                     </div>
                 </div>
                 <div className={style.container}>
-                    <Image src={loop}/>
+                    <Image src={loop} alt={"loop"}/>
                     <div className={style.underline}></div>
                     <div className={style.text}>
                         <h1>Проектирование</h1>
@@ -31,7 +31,7 @@ function WhoWeDo() {
                     </div>
                 </div>
                 <div className={style.container}>
-                    <Image src={cube}/>
+                    <Image src={cube} alt={"cube"}/>
                     <div className={style.underline}></div>
                     <div className={style.text}>
                         <h1>Поддержка</h1>

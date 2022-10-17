@@ -18,7 +18,7 @@ function NeedToCrate() {
                         </div>
                     </div>
                     <div className={style.image_gear}>
-                        <Image src={gear}/>
+                        <Image src={gear} alt={"gear"}/>
                     </div>
                 </div>
             </div>
