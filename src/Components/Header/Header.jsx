@@ -13,7 +13,7 @@ function Header(props) {
                 <title>GRIGA AGENCY</title>
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="description" content="Заказать сайт под ключ. Агенство разработки сайтов. грига агенство. Заказ сайта. Разработка сайта. Агенство которое сделает сайт. грига шоп. griga shop. заказать сайт." />
-                <meta name='viewport' content='width=device-width,initial-scale=1, user-scalable=no'/>
+                <meta name='viewport' content='width=device-width,initial-scale=1, maximum-scale=5'/>
                 <meta content='true' name='HandheldFriendly'/>
                 <meta content='width' name='MobileOptimized'/>
                 <meta content='yes' name='apple-mobile-web-app-capable'/>

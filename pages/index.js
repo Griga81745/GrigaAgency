@@ -9,7 +9,7 @@ import Footer from "../src/Components/Footer/Footer";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div lang={"ru"} className="container">
         <Header/>
         <Hero/>
         <PortfolioMain/>
