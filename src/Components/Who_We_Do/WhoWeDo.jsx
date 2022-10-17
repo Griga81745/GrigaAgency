@@ -1,8 +1,8 @@
 import React from 'react';
 import style from "./WhoWeDo.module.scss"
-import screen from "../../../public/assets/images/Who_We_Do/screen.svg"
-import loop from "../../../public/assets/images/Who_We_Do/loop.svg"
-import cube from "../../../public/assets/images/Who_We_Do/cube.svg"
+import screen from "../../../public/assets/images/Who_We_Do/screen.png"
+import loop from "../../../public/assets/images/Who_We_Do/loop.png"
+import cube from "../../../public/assets/images/Who_We_Do/cube.png"
 import Image from "next/image";
 
 function WhoWeDo() {

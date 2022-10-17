@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import style from "./Hero.module.scss"
-import apiImage from "../../../public/assets/images/Hero/HeroApi.svg"
+import apiImage from "../../../public/assets/images/Hero/HeroApi.png"
 import Links from "./Links/Links";
 
 function Hero() {
@@ -15,7 +15,7 @@ function Hero() {
                 <button id={"animateButton"} className={style.containerLeft_Button}>Заказать проект</button>
             </div>
             <div className={style.containerRight}>
-                <Image src={apiImage} alt={"apiImage"}/>
+                <Image src={apiImage} alt={"apiImage"} placeholder={"blur"}/>
             </div>
         </div>
     );
