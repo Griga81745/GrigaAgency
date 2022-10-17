@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import style from "./Hero.module.scss"
-import apiImage from "../../../public/assets/images/Hero/HeroApi.png"
+import apiImage from "../../../public/assets/images/Hero/HeroApi.webp"
 import Links from "./Links/Links";
 
 function Hero() {

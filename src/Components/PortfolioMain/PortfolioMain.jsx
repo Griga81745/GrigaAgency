@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import style from "./PortfolioMain.module.scss"
-import portfolioImage_1 from "../../../public/assets/images/PortfolioMain/edwardPortfolio.jpg"
+import portfolioImage_1 from "../../../public/assets/images/PortfolioMain/edwardPortfolio.webp"
 import Image from "next/image";
 import Description from "./Description/Description";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
