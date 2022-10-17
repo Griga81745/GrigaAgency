@@ -2,9 +2,7 @@ module.exports = {
     images: {
         unoptimized: true
     },
-
-    i18n: {
-        locales: ["ru"],
-        defaultLocale: "ru",
-    },
+    env: {
+        googleAnalyticsID: "G-C4TQ8TVZHR"
+    }
 }
