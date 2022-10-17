@@ -12,8 +12,8 @@ function Header(props) {
                 <title>GRIGA AGENCY</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <header className={style.headerContainer}>
-                <div>
+            <header className={style.header_Container}>
+                <div className={style.header_container_flex}>
                     <a href="/">
                         <Image src={Logo}/>
                     </a>
