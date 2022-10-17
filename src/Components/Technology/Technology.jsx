@@ -18,7 +18,7 @@ import Card from "../customTags/card";
 
 function Technology() {
     return (
-        <div className={style.wrapper}>
+        <div id={"technology"} className={style.wrapper}>
             <h1>Технологии</h1>
             <div className={style.container_cards}>
                 <div className={style.card}>

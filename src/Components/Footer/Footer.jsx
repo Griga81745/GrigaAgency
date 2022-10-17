@@ -7,13 +7,13 @@ import Links from "../Hero/Links/Links";
 
 function Footer() {
     return (
-        <div className={style.wrapper}>
+        <div id={"footer"} className={style.wrapper}>
             <div className={style.container}>
                 <div className={style.logo}>
-                    <Image src={logo}/>
+                    <Image src={logo} alt={"logo"}/>
                 </div>
                 <div id={"container_rights"} className={style.container_rights}>
-                    <p className={style.rights}>© 2022 Griga Agency. All rights reserved. </p>
+                    <p className={style.rights}>Griga Agency</p>
                 </div>
                 <div className={style.links}>
                     <Links/>

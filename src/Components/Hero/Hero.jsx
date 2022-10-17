@@ -7,7 +7,7 @@ import Links from "./Links/Links";
 function Hero() {
 
     return (
-        <div className={style.container}>
+        <div id={"hero"} className={style.container}>
             <div className={style.containerLeft}>
                 <h1>GRIGA AGENCY</h1>
                 <p>Создаем сайты которые решают бизнес задачи и приносят прибыль</p>

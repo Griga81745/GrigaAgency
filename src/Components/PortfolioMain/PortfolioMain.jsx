@@ -11,7 +11,7 @@ import {
 function PortfolioMain() {
 
     return (
-        <div className={style.wrapper}>
+        <div id={"portfolio"} className={style.wrapper}>
             <div className={style.tag_container}>
                 <h1>Портфолио</h1>
                 <div className={style.see_more_container}>

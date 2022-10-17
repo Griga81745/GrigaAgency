@@ -7,7 +7,7 @@ import Image from "next/image";
 
 function WhoWeDo() {
     return (
-        <div className={style.wrapper}>
+        <div id={"OurUs"} className={style.wrapper}>
             <div className={style.tag}>
                 <h1>Чем мы занимаемся?</h1>
             </div>
