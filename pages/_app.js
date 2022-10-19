@@ -13,5 +13,6 @@ export default function ({ Component, pageProps}){
             ReactGA.pageview(window.location.pathname + window.location.search);
         }
     });
+
     return <Component {...pageProps}/>
 }
