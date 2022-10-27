@@ -1,18 +1,21 @@
-import {createAction} from "@reduxjs/toolkit";
-import {createReducer} from "@reduxjs/toolkit";
 
-const initialState = {
-    cartOpen: false
-}
 
-export const TOGLE_BOLEAN = createAction("TOGLE_BOLEAN");
+import {createSlice} from "@reduxjs/toolkit";
 
-export default createReducer(initialState,{
-    [TOGLE_BOLEAN]: function (state){
-        state.cartOpen = true
-        console.log(TOGLE_BOLEAN)
+const popupSlice = createSlice({
+    name: "bolean",
+    initialState: {
+        bolean: false
+    },
+    reducers: {
+        increment(state){
+            state.bolean = state.bolean = true
+        },
+        decrement(state){
+            state.bolean = state.bolean = false
+        },
     }
 })
 
-console.log(TOGLE_BOLEAN)
-
+export default popupSlice.reducer
+export const {increment, decrement} = popupSlice.actions

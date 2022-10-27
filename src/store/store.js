@@ -2,7 +2,7 @@ import {combineReducers, configureStore} from "@reduxjs/toolkit";
 import popupSlice from "../features/popup/popupSlice";
 
 const rootReducer = combineReducers({
-    togle: popupSlice,
+    toolkit: popupSlice,
 })
 
 export const store = configureStore({

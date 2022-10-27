@@ -1,12 +1,15 @@
 import React from "react";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {increment} from "../../features/popup/popupSlice";
 
 export default function () {
-    const statusPopUp = useSelector(state=> state.togle.cartOpen)
+    const statusPopUp = useSelector(state=> state.toolkit.bolean)
     console.log(statusPopUp + " order")
+    const dispath = useDispatch()
+
     return(
         <>
-            <button onClick={statusPopUp}>Заказать</button>
+            <button onClick={()=>dispath(increment())}>Заказать</button>
         </>
     )
 }
