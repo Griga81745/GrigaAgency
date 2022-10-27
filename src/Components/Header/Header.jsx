@@ -4,6 +4,7 @@ import Image from "next/image";
 import Logo from "../../../public/assets/images/Header/Logo.png"
 import style from "./Header.module.scss"
 import A from "../customTags/A";
+import Order from "../customTags/order";
 
 function Header(props) {
 
@@ -32,7 +33,7 @@ function Header(props) {
                             <A href={"#footer"} text={"Контакты"}/>
                         </div>
                     </div>
-                    <button>Заказать</button>
+                    <Order/>
                 </div>
             </header>
         </div>
