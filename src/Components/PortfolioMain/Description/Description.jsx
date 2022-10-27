@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import style from "../PortfolioMain.module.scss";
+import style from "./Description.module.scss";
 import Image from "next/image";
 import arrow from "../../../../public/assets/images/PortfolioMain/arrow.svg";
 import githubICO from "../../../../public/assets/images/PortfolioMain/github.svg";

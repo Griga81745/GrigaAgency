@@ -1,7 +1,7 @@
 import Header from "../src/Components/Header/Header";
 import Hero from "../src/Components/Hero/Hero";
 import PortfolioMain from "../src/Components/PortfolioMain/PortfolioMain";
-import WhoWeDo from "../src/Components/Who_We_Do/WhoWeDo";
+import WhatWeDo from "../src/Components/What_We_Do/WhatWeDo";
 import NeedToCrate from "../src/Components/Need_To_Create/NeedToCrate";
 import Technology from "../src/Components/Technology/Technology";
 import ContactUs from "../src/Components/contactUs/Contact_Us";
@@ -18,7 +18,7 @@ export default function Home() {
             <Header/>
             <Hero/>
             <PortfolioMain/>
-            <WhoWeDo/>
+            <WhatWeDo/>
             <NeedToCrate/>
             <Technology/>
             <ContactUs/>

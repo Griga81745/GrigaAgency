@@ -19,12 +19,12 @@ function OrderMenu() {
                     </div>
                     <h1>Написать нам</h1>
                     <div>
-                        <form action="/" className={style.modal__forms}>
-                            <input type="text" placeholder={"Имя"}/>
-                            <input type="text" placeholder={"Email"}/>
-                            <input type="text" placeholder={"Telegram "}/>
-                            <input type="text" placeholder={"Название проекта"}/>
-                            <input type="text" placeholder={"Информация"}/>
+                        <form action="api/form" name={"form"} method={"POST"} className={style.modal__forms}>
+                            <input type="text" name={"name"} placeholder={"Имя"}/>
+                            <input type="email" name={"mail"} placeholder={"Email"} required />
+                            <input type="text" name={"telegram"} placeholder={"Telegram"} required />
+                            <input type="text" name={"name Project"} placeholder={"Название проекта"} required />
+                            <input type="text" name={"description"} placeholder={"Описание"} required />
                             <button type={"submit"} className={style.modal__submit}>Отправить</button>
                         </form>
                     </div>

@@ -1,11 +1,11 @@
 import React from 'react';
-import style from "./WhoWeDo.module.scss"
-import screen from "../../../public/assets/images/Who_We_Do/screen.png"
-import loop from "../../../public/assets/images/Who_We_Do/loop.png"
-import cube from "../../../public/assets/images/Who_We_Do/cube.png"
+import style from "./WhatWeDo.module.scss"
+import screen from "../../../public/assets/images/What_We_Do/screen.png"
+import loop from "../../../public/assets/images/What_We_Do/loop.png"
+import cube from "../../../public/assets/images/What_We_Do/cube.png"
 import Image from "next/image";
 
-function WhoWeDo() {
+function WhatWeDo() {
     return (
         <div id={"OurUs"} className={style.wrapper}>
             <div className={style.tag}>
@@ -45,4 +45,4 @@ function WhoWeDo() {
     );
 }
 
-export default WhoWeDo;
+export default WhatWeDo;
