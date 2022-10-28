@@ -4,7 +4,7 @@ import Image from "next/image";
 import arrow from "../../../../public/assets/images/PortfolioMain/arrow.svg";
 import githubICO from "../../../../public/assets/images/PortfolioMain/github.svg";
 
-function Description() {
+export default function ({Stack1, Stack2, Stack3, Stack4, Stack5, GitLink}) {
     const [active, setActive] = useState(false)
 
     function set_Active(){
@@ -25,15 +25,15 @@ function Description() {
                 </div>
                 <div className={style.portfolio_description_stack}>
                     <ul>
-                        <li>HTML | CSS</li>
-                        <li>JavaScript </li>
-                        <li>React</li>
-                        <li>Next.js</li>
-                        <li>Redux</li>
+                        <li>{Stack1}</li>
+                        <li>{Stack2}</li>
+                        <li>{Stack3}</li>
+                        <li>{Stack4}</li>
+                        <li>{Stack5}</li>
                     </ul>
                 </div>
                 <div className={style.portfolio_description_githubICO}>
-                    <a href="/" target={"_blank"}>
+                    <a href={GitLink} target={"_blank"}>
                         <Image src={githubICO} alt={"github"}/>
                     </a>
                 </div>
@@ -42,4 +42,3 @@ function Description() {
     );
 }
 
-export default Description;

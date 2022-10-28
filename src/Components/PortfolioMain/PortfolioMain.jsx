@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import Cart from "./Cart/Cart";
+import Description from "./Description/Description";
 
 function PortfolioMain() {
 
@@ -25,7 +26,10 @@ function PortfolioMain() {
             <div className={style.portfolio_wrapper}>
                 {
                     Array.apply(null,Array(3)).map(()=>(
-                        <Cart/>
+                        <div>
+                            <Cart Href={"https://edwardtrubin.com/"} Src={"edwardPortfolio.webp"} Alt={"Edward Trubin Portfolio"}/>
+                            <Description Stack1={"HTML | CSS"} Stack2={"JavaScript"} Stack3={"React"} Stack4={"Next.js"} Stack5={"Redux"} GitLink={"https://github.com/Griga81745"}/>
+                        </div>
                     ))
                 }
             </div>
