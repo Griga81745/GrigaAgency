@@ -5,6 +5,7 @@ import Logo from "../../../public/assets/images/Header/Logo.png"
 import style from "./Header.module.scss"
 import A from "../customTags/A";
 import Order from "../customTags/order";
+import Link from "next/link";
 
 function Header(props) {
 
@@ -21,16 +22,18 @@ function Header(props) {
             </Head>
             <header className={style.header_Container}>
                 <div className={style.header_container_flex}>
-                    <a href="/">
-                        <Image src={Logo} alt={"logo"}/>
-                    </a>
+                    <Link href={"/"}>
+                        <a href="/">
+                            <Image src={Logo} alt={"logo"}/>
+                        </a>
+                    </Link>
                     <div className={style.headerLinks_adaptation}>
                         <div id="header-links" className={style.headerLinks}>
-                            <A href={"#hero"} text={"Главная"}/>
-                            <A href={"#portfolio"} text={"Портфолио"}/>
-                            <A href={"#OurUs"} text={"О нас"}/>
-                            <A href={"#technology"} text={"Технологии"}/>
-                            <A href={"#footer"} text={"Контакты"}/>
+                            <A href={"/"} text={"Главная"}/>
+                            <A href={"/portfolio"} text={"Портфолио"}/>
+                            <A href={"/#OurUs"} text={"О нас"}/>
+                            <A href={"/#technology"} text={"Технологии"}/>
+                            <A href={"/#footer"} text={"Контакты"}/>
                         </div>
                     </div>
                     <Order/>

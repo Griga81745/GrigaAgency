@@ -4,12 +4,14 @@ import Header from "../src/Components/Header/Header";
 import {store} from "../src/store/store";
 import {Provider} from "react-redux";
 import Portfolio_ from "../src/Components/Portfolio/Portfolio_";
+import OrderMenu from "../src/Components/OrderMenu/OrderMenu";
 
 function Portfolio() {
     return (
         <div>
             <Provider store={store}>
                 <Header/>
+                <OrderMenu/>
                 <Portfolio_/>
                 <Footer/>
             </Provider>

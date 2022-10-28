@@ -26,11 +26,11 @@ $textBlue: #26B7CB;
       font-weight: 500;
       font-size: 18px;
       line-height: 21px;
-      >A:nth-child(1){
-        color: $textBlue;
-        text-decoration: underline;
-        text-underline-offset: 5px;
-      }
+      //>A:nth-child(1){
+      //  color: $textBlue;
+      //  text-decoration: underline;
+      //  text-underline-offset: 5px;
+      //}
       :hover{
         color: $textBlue;
         text-decoration: underline;
