@@ -8,7 +8,6 @@ import {decrement} from "../../features/popup/popupSlice";
 function OrderMenu() {
     const statusPopUp = useSelector(state=> state.toolkit.bolean)
     const dispath = useDispatch()
-    console.log(statusPopUp + " order menu")
 
     return (
         <div className={style.wrapper} style={{transform: statusPopUp? "translateX(0px)":"translateX(-2000px)"}}>

@@ -9,7 +9,7 @@ export default function ({Href, Src, Alt}){
                 <div className={style.portfolio_container_position}>
                     <div className={style.portfolio_imageContainer}>
                         <a href={Href} target={"_blank"}>
-                            <Image className={style.portfolio_image} src={require("../../../../public/assets/images/PortfolioImages/"+Src)} width={320} height={320} alt={Alt} placeholder={"blur"}/>
+                            <Image className={style.portfolio_image} src={Src} width={320} height={320} alt={Alt}/>
                         </a>
                     </div>
                 </div>
