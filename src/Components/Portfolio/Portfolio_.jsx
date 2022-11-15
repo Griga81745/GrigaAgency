@@ -3,7 +3,6 @@ import Cart from "../PortfolioMain/Cart/Cart";
 import style from "./Portfolio.module.scss"
 import Description from "../PortfolioMain/Description/Description";
 import {useState} from "react";
-import axios from "axios";
 
 function Portfolio_() {
     const [projects,setProjects] = useState([])
