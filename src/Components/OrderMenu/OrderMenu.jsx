@@ -10,7 +10,7 @@ function OrderMenu() {
     const dispath = useDispatch()
 
     return (
-        <div className={style.wrapper} style={{transform: statusPopUp? "translateX(0px)":"translateX(-2000px)"}}>
+        <div className={style.wrapper} style={{display: statusPopUp? "block":"none"}}>
             <div className={style.modal}>
                 <div className={style.modal_form}>
                     <div className={style.exit}>

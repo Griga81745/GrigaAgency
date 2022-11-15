@@ -4,7 +4,7 @@ import Image from "next/image";
 import arrow from "../../../../public/assets/images/PortfolioMain/arrow.svg";
 import githubICO from "../../../../public/assets/images/PortfolioMain/github.svg";
 
-export default function ({Stack1, Stack2, Stack3, Stack4, Stack5, GitLink}) {
+export default function ({project, GitLink}) {
     const [active, setActive] = useState(false)
 
     function set_Active(){
@@ -13,7 +13,7 @@ export default function ({Stack1, Stack2, Stack3, Stack4, Stack5, GitLink}) {
 
     return (
         <div>
-            <div className={style.portfolio_description} style={{height: active?"340px":"50px", transitionDuration: "0.5s"}}>
+            <div className={style.portfolio_description} style={{maxHeight: active?"1000px":"50px", transitionDuration: "0.5s"}}>
                 <div className={style.portfolio_description_descriptionTag_container}>
                     <div id={"description_1"} onClick={set_Active} className={style.portfolio_description_descriptionTag}>
                         <p style={{userSelect: "none"}}>Подробнее</p>
@@ -25,11 +25,9 @@ export default function ({Stack1, Stack2, Stack3, Stack4, Stack5, GitLink}) {
                 </div>
                 <div className={style.portfolio_description_stack}>
                     <ul>
-                        <li>{Stack1}</li>
-                        <li>{Stack2}</li>
-                        <li>{Stack3}</li>
-                        <li>{Stack4}</li>
-                        <li>{Stack5}</li>
+                        {
+                            project.stack.map(Stack=><li key={Stack}>{Stack}</li>)
+                        }
                     </ul>
                 </div>
                 <div className={style.portfolio_description_githubICO}>

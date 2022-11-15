@@ -13,15 +13,14 @@ function Portfolio_() {
             .then(setProjects)
     },[])
     console.log(projects)
-    console.log(projectZero)
     return (
         <div className={style.wrapper}>
             <div className={style.container}>
                 {
-                    Array.apply(null,Array(projects.id)).map(()=>(
-                        <div>
-                            <Cart Href={projects[0]} Src={""} Alt={"Project load error"}/>
-                            <Description Stack1={" | Get in api"} Stack2={"JavaScript"} Stack3={"React"} Stack4={"Next.js"} Stack5={"Redux"} GitLink={"https://github.com/Griga81745"}/>
+                    projects.map((item)=>(
+                        <div key={item.id}>
+                            <Cart Href={item.link} Src={item.image} Alt={"project"}/>
+                            <Description GitLink={item.link_github} project={item}/>
                         </div>
                     ))
                 }

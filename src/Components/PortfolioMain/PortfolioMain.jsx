@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import style from "./PortfolioMain.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,7 +9,12 @@ import Cart from "./Cart/Cart";
 import Description from "./Description/Description";
 
 function PortfolioMain() {
-
+    const [projects,setProjects] = useState([])
+    useEffect( () => {
+        fetch('http://127.0.0.1:8000/api/projects/')
+            .then(res=>res.json())
+            .then(setProjects)
+    },[])
     return (
         <div id={"portfolio"} className={style.wrapper}>
             <div className={style.tag_container}>
@@ -25,10 +30,10 @@ function PortfolioMain() {
             </div>
             <div className={style.portfolio_wrapper}>
                 {
-                    Array.apply(null,Array(3)).map(()=>(
-                        <div>
-                            <Cart Href={"https://edwardtrubin.com/"} Src={"edwardPortfolio.webp"} Alt={"Edward Trubin Portfolio"}/>
-                            <Description Stack1={"HTML | CSS"} Stack2={"JavaScript"} Stack3={"React"} Stack4={"Next.js"} Stack5={"Redux"} GitLink={"https://github.com/Griga81745"}/>
+                    projects.map((item)=>(
+                        <div key={item.id}>
+                            <Cart Href={item.link} Src={item.image} Alt={"project"}/>
+                            <Description GitLink={item.link_github} project={item}/>
                         </div>
                     ))
                 }
