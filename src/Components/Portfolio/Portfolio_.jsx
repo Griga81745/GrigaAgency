@@ -6,12 +6,12 @@ import {useState} from "react";
 
 function Portfolio_() {
     const [projects,setProjects] = useState([])
-    useEffect( () => {
-        fetch('http://127.0.0.1:8000/api/projects/')
-            .then(res=>res.json())
-            .then(setProjects)
-    },[])
-    console.log(projects)
+    // useEffect( () => {
+    //     fetch('http://127.0.0.1:8000/api/projects/')
+    //         .then(res=>res.json())
+    //         .then(setProjects)
+    // },[])
+    // console.log(projects)
     return (
         <div className={style.wrapper}>
             <div className={style.container}>

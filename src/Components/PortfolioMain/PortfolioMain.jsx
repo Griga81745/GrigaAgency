@@ -10,11 +10,11 @@ import Description from "./Description/Description";
 
 function PortfolioMain() {
     const [projects,setProjects] = useState([])
-    useEffect( () => {
-        fetch('http://127.0.0.1:8000/api/projects/')
-            .then(res=>res.json())
-            .then(setProjects)
-    },[])
+    // useEffect( () => {
+    //     fetch('http://127.0.0.1:8000/api/projects/')
+    //         .then(res=>res.json())
+    //         .then(setProjects)
+    // },[])
     return (
         <div id={"portfolio"} className={style.wrapper}>
             <div className={style.tag_container}>
